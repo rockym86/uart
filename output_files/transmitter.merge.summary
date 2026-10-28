@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Wed Oct 21 14:16:14 2026
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : transmitter
+Top-level Entity Name : transmitter
+Family : Cyclone IV E
+Total logic elements : 1,011
+    Total combinational functions : 700
+    Dedicated logic registers : 707
+Total registers : 707
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 45,168
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

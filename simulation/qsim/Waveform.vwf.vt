@@ -1,0 +1,88 @@
+// Copyright (C) 2025  Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Altera and sold by Altera or its authorized distributors.  Please
+// refer to the Altera Software License Subscription Agreements 
+// on the Quartus Prime software download page.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/12/2026 12:31:28"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          ConfigCD
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ConfigCD_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg C;
+reg conf_ready;
+reg config_start;
+reg Tf;
+// wires                                               
+wire LoadREG;
+wire PerifConfig;
+
+// assign statements (if any)                          
+ConfigCD i1 (
+// port map - connection between master ports and signals/registers   
+	.C(C),
+	.conf_ready(conf_ready),
+	.config_start(config_start),
+	.LoadREG(LoadREG),
+	.PerifConfig(PerifConfig),
+	.Tf(Tf)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// C
+always
+begin
+	C = 1'b0;
+	C = #5000 1'b1;
+	#5000;
+end 
+
+// config_start
+initial
+begin
+	config_start = 1'b0;
+	config_start = #55000 1'b1;
+	config_start = #10000 1'b0;
+end 
+
+// Tf
+initial
+begin
+	Tf = 1'b0;
+	Tf = #95000 1'b1;
+	Tf = #45000 1'b0;
+end 
+
+// conf_ready
+initial
+begin
+	conf_ready = 1'b0;
+	conf_ready = #125000 1'b1;
+	conf_ready = #145000 1'b0;
+end 
+endmodule
+

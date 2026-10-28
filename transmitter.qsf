@@ -1,0 +1,132 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+# Date created = 09:09:20  October 08, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		transmitter_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6F17I7
+set_global_assignment -name TOP_LEVEL_ENTITY transmitter
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 24.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:09:20  OCTOBER 08, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_location_assignment PIN_E1 -to CLK
+set_location_assignment PIN_N1 -to Tx
+set_location_assignment PIN_M15 -to Test
+set_location_assignment PIN_E10 -to led
+set_location_assignment PIN_M2 -to Rx
+set_location_assignment PIN_M16 -to conf
+set_location_assignment PIN_A9 -to CTE
+set_location_assignment PIN_F9 -to led2
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp2.stp
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_N13 -to RST
+set_global_assignment -name BDF_FILE transmitter.bdf
+set_global_assignment -name BDF_FILE CD.bdf
+set_global_assignment -name BDF_FILE CT.bdf
+set_global_assignment -name BDF_FILE REGEB.bdf
+set_global_assignment -name BDF_FILE REG.bdf
+set_global_assignment -name BDF_FILE TransCTEB.bdf
+set_global_assignment -name QIP_FILE pll.qip
+set_global_assignment -name BDF_FILE TransCT11.bdf
+set_global_assignment -name BDF_FILE CT11EB.bdf
+set_global_assignment -name BDF_FILE Receiv.bdf
+set_global_assignment -name BDF_FILE ReceivCD.bdf
+set_global_assignment -name BDF_FILE ReceivREG.bdf
+set_global_assignment -name BDF_FILE ReceivSHREG.bdf
+set_global_assignment -name BDF_FILE ReceivCTEB.bdf
+set_global_assignment -name BDF_FILE ReceivCT4.bdf
+set_global_assignment -name BDF_FILE output_files/Trans.bdf
+set_global_assignment -name BDF_FILE Trans.bdf
+set_global_assignment -name BDF_FILE ConfigCD.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name MIF_FILE speedinit.mif
+set_global_assignment -name QIP_FILE speedrom.qip
+set_global_assignment -name BDF_FILE REG11.bdf
+set_global_assignment -name VERILOG_FILE CNTREGT.v
+set_global_assignment -name VERILOG_FILE CNTREGR.v
+set_global_assignment -name VERILOG_FILE Button.v
+set_global_assignment -name SIGNALTAP_FILE stp2.stp
+set_global_assignment -name SDC_FILE db/ip/sld73feabd4/SDC1.sdc
+set_global_assignment -name QIP_FILE BaudRateROM.qip
+set_global_assignment -name VERILOG_FILE baudgen.v
+set_global_assignment -name VERILOG_FILE devider.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VERILOG_FILE CompareREG.v
+set_global_assignment -name MIF_FILE rom17bitspeed.mif
+set_global_assignment -name VERILOG_FILE map_register.v
+set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name SIGNALTAP_FILE output_files/stp2.stp
+set_global_assignment -name VECTOR_WAVEFORM_FILE db/ip/sld73feabd4/Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ReceiverConfig.vwf
+set_global_assignment -name EDA_SIMULATION_TOOL "QuestaSim (Verilog)"
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR /home/shatoo/Desktop/ofigevaem -section_id eda_simulation
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name BDF_FILE DBNC.bdf
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Tx
+set_instance_assignment -name PRESERVE_REGISTER ON -to "REG:TRANSSHREG|REGEB:10R"
+set_instance_assignment -name PRESERVE_REGISTER ON -to "REG:TRANSSHREG|REGEB:11R"
+set_instance_assignment -name PRESERVE_REGISTER ON -to "CT:BITCNT|TransCTEB:Q0"
+set_instance_assignment -name PRESERVE_REGISTER ON -to "CT:BITCNT|TransCTEB:Q1"
+set_instance_assignment -name PRESERVE_REGISTER ON -to "CT:BITCNT|TransCTEB:Q2"
+set_instance_assignment -name PRESERVE_REGISTER ON -to "CT:BITCNT|TransCTEB:Q3"
+set_instance_assignment -name PRESERVE_REGISTER ON -to "CT:BITCNT"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Rx
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CTE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Test
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RST
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to conf
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led2
+set_instance_assignment -name SLEW_RATE 2 -to CTE
+set_global_assignment -name BDF_FILE CNT16.bdf
+set_global_assignment -name BDF_FILE SpeedREG.bdf
+set_global_assignment -name BDF_FILE memory.bdf
+set_global_assignment -name BDF_FILE DEC38.bdf
+set_global_assignment -name BDF_FILE REG8.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

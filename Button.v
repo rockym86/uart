@@ -1,0 +1,33 @@
+module Button (
+	input X,
+	output reg TTrigQ,
+	input C
+	);
+	
+	
+	initial TTrigQ <= 1'd0;
+	reg[15:0] CTQ;
+	reg XQ, RSTrigQ, BQ;
+	wire FY = !RSTrigQ & BQ;
+	
+	always @(posedge C)begin
+		XQ <= !X;
+		if(XQ & ~&CTQ)CTQ <= CTQ + 1'd1;
+			else if(!XQ & |CTQ) CTQ <= CTQ-1'd1;
+		
+		if(&CTQ) RSTrigQ <= 1'd1;
+			else if(~|CTQ) RSTrigQ <= 0;
+		BQ <= RSTrigQ;
+		if(FY) TTrigQ <= !TTrigQ;
+	
+	end
+
+
+
+
+
+
+
+
+
+endmodule

@@ -1,0 +1,128 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 200 176)
+	(text "ReceivCD" (rect 5 0 60 15)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Parity" (rect 0 0 34 15)(font "Intel Clear" (font_size 8)))
+		(text "Parity" (rect 21 27 55 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CTBitsEq8" (rect 0 0 61 15)(font "Intel Clear" (font_size 8)))
+		(text "CTBitsEq8" (rect 21 43 82 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CTBitsEq15" (rect 0 0 69 15)(font "Intel Clear" (font_size 8)))
+		(text "CTBitsEq15" (rect 21 59 90 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Strob" (rect 0 0 33 15)(font "Intel Clear" (font_size 8)))
+		(text "Strob" (rect 21 75 54 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "Line" (rect 0 0 24 15)(font "Intel Clear" (font_size 8)))
+		(text "Line" (rect 21 91 45 106)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "C" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
+		(text "C" (rect 21 107 29 122)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "CE" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
+		(text "CE" (rect 21 123 37 138)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "a[2..0]" (rect 0 0 36 15)(font "Intel Clear" (font_size 8)))
+		(text "a[2..0]" (rect 127 27 163 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "CTBitsINC" (rect 0 0 59 15)(font "Intel Clear" (font_size 8)))
+		(text "CTBitsINC" (rect 104 43 163 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(port
+		(pt 184 64)
+		(output)
+		(text "CTBitsR" (rect 0 0 46 15)(font "Intel Clear" (font_size 8)))
+		(text "CTBitsR" (rect 117 59 163 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 64)(pt 168 64))
+	)
+	(port
+		(pt 184 80)
+		(output)
+		(text "CTStrobR" (rect 0 0 56 15)(font "Intel Clear" (font_size 8)))
+		(text "CTStrobR" (rect 107 75 163 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 80)(pt 168 80))
+	)
+	(port
+		(pt 184 96)
+		(output)
+		(text "REGShSH" (rect 0 0 56 15)(font "Intel Clear" (font_size 8)))
+		(text "REGShSH" (rect 107 91 163 106)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 96)(pt 168 96))
+	)
+	(port
+		(pt 184 112)
+		(output)
+		(text "REGL" (rect 0 0 31 15)(font "Intel Clear" (font_size 8)))
+		(text "REGL" (rect 132 107 163 122)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 112)(pt 168 112))
+	)
+	(port
+		(pt 184 128)
+		(output)
+		(text "TFS" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
+		(text "TFS" (rect 140 123 163 138)(font "Intel Clear" (font_size 8)))
+		(line (pt 184 128)(pt 168 128))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 144))
+	)
+)

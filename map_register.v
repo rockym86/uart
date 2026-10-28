@@ -1,0 +1,25 @@
+module map_register(
+	input wire clk,
+	input wire reset,
+	input wire L,
+	input wire [7:0] D,
+	output reg [7:0] Q);
+	
+	
+	
+	initial begin
+		Q = 8'b0000_0000;
+	end
+
+	always @(posedge clk)begin
+		if(reset)begin
+			Q <= 8'b0000_0000;
+		end else if(L)begin
+			Q <= D;
+		end
+	end
+
+
+
+
+endmodule

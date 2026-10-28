@@ -1,0 +1,153 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/shatoo/Desktop/ofigevaem/simulation/qsim
+vConfigCD
+Z1 !s110 1791797491
+!i10b 1
+!s100 k62`gz2CT]6<JAHc0?>bf1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8X3M01oh[=I^De3Oj@^Q:2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1791797490
+Z4 8transmitter.vo
+Z5 Ftransmitter.vo
+!i122 6
+L0 32 221
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1791797491.000000
+Z8 !s107 transmitter.vo|
+Z9 !s90 -work|work|transmitter.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@config@c@d
+vConfigCD_vlg_vec_tst
+R1
+!i10b 1
+!s100 lF=FGPVEe1]=M2T9AVSND1
+R2
+I:SER7mfiC10OiAmzAHbSR2
+R3
+R0
+w1791797488
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 7
+L0 30 58
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@config@c@d_vlg_vec_tst
+vdevider
+Z12 !s110 1792065630
+!i10b 1
+!s100 7:Z2@jTMJagT`PZC]_4WM2
+R2
+IiESKee3UV79?2G>RFB9292
+R3
+R0
+w1792065628
+R4
+R5
+!i122 20
+L0 32 346
+R6
+r1
+!s85 0
+31
+Z13 !s108 1792065630.000000
+R8
+R9
+!i113 1
+R10
+R11
+vdevider_vlg_vec_tst
+R12
+!i10b 1
+!s100 S>kRa@=GN3bY0dlcc@Ojz3
+R2
+I7J>=088MdTeRWGkWOo1a11
+R3
+R0
+w1792065627
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 21
+L0 30 65
+R6
+r1
+!s85 0
+31
+R13
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+vReceiv
+Z14 !s110 1792672764
+!i10b 1
+!s100 Vjn^AABEHZNZWo65eak^F3
+R2
+IekaAFYcjL_H_HzIM_?iH?0
+R3
+R0
+w1792672762
+R4
+R5
+!i122 34
+L0 32 1659
+R6
+r1
+!s85 0
+31
+Z15 !s108 1792672764.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@receiv
+vReceiv_vlg_vec_tst
+R14
+!i10b 1
+!s100 7=[T3_CN4AenB8P41?]e60
+R2
+I;j8n_O36Gk>aXc0SWGjCL3
+R3
+R0
+w1792672761
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 35
+L0 30 86
+R6
+r1
+!s85 0
+31
+R15
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
+n@receiv_vlg_vec_tst

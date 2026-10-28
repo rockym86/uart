@@ -1,0 +1,22 @@
+module CNTREGT (
+	input clk,
+	input reset,
+	input L,
+	input wire [10:0] d,
+	output reg [10:0] q);
+	
+	initial begin
+		q = 11'b11111001111;
+	end
+	
+	
+	always_ff @(posedge clk)begin
+		if(L)begin
+			q <= d;
+		end
+	end
+
+
+
+
+endmodule
